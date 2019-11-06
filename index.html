@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>cityScout</title>
+  <meta name="author" content="name" />
+  <meta name="description" content="description here" />
+  <meta name="keywords" content="keywords,here" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <style>
+    .score-container {
+      width: 100%;
+      background-color: #ddd;
+      font-family: candara, arial, helvetica;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .stats {
+      text-align: right;
+      padding: 0px;
+      color: white;
+      background-color: red;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .brand-logo {
+      font-family: candara, arial, helvetica;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="center">
+      <div class="nav-wrapper grey">
+        <a href="#" class="brand-logo center">cityScout</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="start-container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card center">
+          <div class="card-image" style="margin-left:29%">
+            <img src="./125729-fisheye_lens-3d-earth.jpg" style="width:60%;" />
+            <span class="card-title responsive" style="font-size:2vw;font-family:candara,arial,helvetica;font-weight:bold;background-color: rgba(0, 0, 255, 0.3);">
+              Greetings, Fellow Earthling!</span>
+          </div>
+          <div class="card-content">
+            <p style="font-size:18px;font-family:candara,arial,helvetica;">
+              This is an app to assist travelers to get basic information on
+              their chosen destination.
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn-large start-btn"
+              style="font-family:candara,arial,helvetica;font-weight:bold;font-size:20px">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="dropdown-container" style="display:none">
+    <div class="row" id="instructions">
+      <div class="col" id="continentText"></div>
+      <div class="col" id="countryText"></div>
+      <div class="col" id="cityText"></div>
+    </div>
+    <div class="row">
+      <div class="col s4 input-field dropdown" id="continent">
+        <button class="btn btn-secondary dropdown-toggle" type="button" style="padding: 0 60px" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Continents
+        </button>
+      </div>
+      <div class="col s4 dropdown" id="country"></div>
+      <div class="col s4 dropdown" id="city"></div>
+    </div>
+    
+  </div>
+  
+
+  <div id="cityinfo-container">
+    <div class="row">
+      <div class="col s12 m7" id="city-intro"></div>
+    </div>
+    <div class="row">
+      <div class="col s9" id="city-qualities"></div>
+      <div class="col s3" id="currency-exchange">
+        <div id="population"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12" id="nav-btn"></div>
+    </div>
+  </div>
+
+  <!-- <div id = "search-history">
+
+  </div> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/script.js" text="text/javascript"></script>
+  <style>
+</body>
+</html>
