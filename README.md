@@ -65,4 +65,4 @@ function getCityList(countryId) {
 
 **Installation**
 
-No installation necessary. Project is hosted here: https://uchrissd.github.io/city-scout/
+No installation necessary. Project is hosted here: https://mark-bernstein.github.io/cityScout/
